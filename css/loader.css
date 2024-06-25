@@ -1,0 +1,40 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column; /* Колонка для центрирования элементов */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    z-index: 9999; /* Задаем высокий z-index для отображения поверх остального контента */
+  }
+
+  .loader {
+    border: 8px solid #ff6600; /* Цвет акцента */
+    border-radius: 50%;
+    border-top: 8px solid transparent; /* Прозрачный верх */
+    width: 80px; /* Больший размер колесика */
+    height: 80px; /* Больший размер колесика */
+    animation: spin 1s linear infinite; /* Анимация вращения */
+    margin-bottom: 20px; /* Отступ между колесиком и текстом */
+  }
+
+  .loading-text {
+    font-size: 24px; /* Больший размер текста */
+    color: white; /* Цвет текста */
+    margin: 0;
+  }
+
+  /* Анимация вращения */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Скрытие элемента */
+  .hidden {
+    display: none;
+  }

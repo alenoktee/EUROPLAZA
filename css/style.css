@@ -1,0 +1,327 @@
+/* ~~~~~~~~~~~~~~~~ MAIN STYLES ~~~~~~~~~~~~~~~~ */
+:root {
+  --accent-color: #E94E24;
+  --dark-color: #1B1B1B;
+  --gray-color: #252525;
+  --white-color: white;
+}
+.active {
+  color: var(--accent-color);
+}
+body {
+  font-family: 'Commissioner', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+.sep {
+  margin: 0px 20px;
+}
+
+.header {
+  transition: background-color 0.3s ease;
+}
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ~~~~~~~~~~~~~~~~ SECTION 1 ~~~~~~~~~~~~~~~~ */
+.line-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.white-line {
+  width: 10px;
+  height: 100vh;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: -70px;
+}
+
+.logo {
+  font-size: 20pt;
+  font-weight: 600;
+}
+.phone {
+  font-size: 16pt;
+}
+.phone img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+.section-1 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+.section-1 video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.section-1 h1,
+.section-1 h2 {
+  text-align: left;
+}
+
+.section-1 h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.section-1 h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.text-block {
+  width: 130%;
+  margin-top: 30%;
+  margin-bottom: 30px;
+}
+
+/* ~~~~~~~~~~~~~~~~ SECTION 2 ~~~~~~~~~~~~~~~~ */
+
+.section-2,
+.section-3,
+.section-4 {
+  background-color: var(--dark-color);
+}
+.section-2 img,
+.section-3 img,
+.section-4 .price {
+  background-color: transparent;
+}
+
+.section-2 {
+  text-align: left;
+}
+
+.section-2 h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.section-2 .about-img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.section-2 .about-desc {
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0px 20px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~ SECTION 3 ~~~~~~~~~~~~~~~~ */
+.full-width-background {
+  background-color: var(--gray-color);
+}
+
+.full-width-background .container {
+  background-color: transparent;
+}
+
+.section-3 {
+  background-color: var(--gray-color);
+  text-align: center;
+}
+
+.section-3 h2 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.section-3 .row {
+  display: flex;
+  justify-content: center;
+}
+
+.section-3 .col-md-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+  margin-top: 0px;
+}
+
+.section-3 img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.section-3 h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-3 p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.advantage-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #363636;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  position: relative;
+}
+
+.advantage-item:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-item .content {
+  flex: 1;
+  padding-left: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.advantage-item .img-fluid {
+  font-size: 60px;
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+  align-self: flex-start;
+}
+
+.advantage-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.advantage-item p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
+/* ~~~~~~~~~~~~~~~~ SECTION 4 ~~~~~~~~~~~~~~~~ */
+.section-4 h2 {
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.section-4 .price {
+  background-color: var(--gray-color);;
+}
+
+.section-4 .custom-table {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.section-4 .custom-table th,
+.section-4 .custom-table td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+}
+
+.section-4 .custom-table thead th {
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+.section-4 .custom-table tbody tr {
+    background-color: transparent;
+}
+
+.section-4 .custom-table tbody tr:not(:last-child) {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.section-4 .custom-table tbody tr:hover {
+    background-color: var(--gray-color);
+}
+
+/* ~~~~~~~~~~~~~~~~ SECTION 5 ~~~~~~~~~~~~~~~~ */
+
+.section-5 {
+  background-color: var(--gray-color);
+  color: #fff;
+  margin-top: 20px;
+}
+
+.section-5 h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.section-5 p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.contact p i {
+  margin-right: 15px;
+}
+
+/* ~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~ */
+footer {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+footer .column h5,
+footer .column p {
+  color: #fff;
+}
