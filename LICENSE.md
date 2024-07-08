@@ -1,5 +1,6 @@
 Proprietary License
 
+
 Copyright 2024 Alena Mikhnevich
 
 All rights reserved. This project and all its contents are proprietary and may not be used, copied, modified, or distributed without explicit permission from the author.
