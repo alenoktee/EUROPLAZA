@@ -1,4 +1,4 @@
-# ** https://europlaza.by/ **
+# **https://europlaza.by/**
 
 # **Task:**
 
